@@ -1,4 +1,4 @@
-//
+// BASES PRODUCTS classes for each product
 class MastodonCar{
   useGPS(){
     throw new Error("Method is not implement")
@@ -11,7 +11,7 @@ class RhinoCar{
   } 
 }
 
-// 
+// CONCRETE PRODUCTS Implement concrete product class Inherit/extends base products
 class MastodonSendCar extends MastodonCar{
 
   useGPS(){
@@ -40,7 +40,7 @@ class RhinoHatchbackCar extends RhinoCar{
   }
 }
 
-//
+// ABSTRACT FACTORY
 class CarAbstractFactory{
   createMastodon(){
     throw new Error("Method is no implemented abstract")
@@ -51,7 +51,7 @@ class CarAbstractFactory{
   }
 }
 
-//
+// CONCRETE FACTORIES
 class SedanCarFactory{
   createMastodon(){
     return new MastodonSendCar();
